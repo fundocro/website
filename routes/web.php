@@ -14,7 +14,25 @@
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/photography', function () {
+    return view('photo');
+});
+Route::get('/resume', function () {
+    return view('rsmr');
+});
+
+Route::get('/projects', function () {
+    return view('projects.projects');
+});
 
 Route::get('/resources', function () {
     return view('rsc');
 });
+Route::get('/contact', function () {
+    return view('contact');
+});
+Route::get('/wip', function () {
+    return view('wip');
+});
+
+

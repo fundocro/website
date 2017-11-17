@@ -96,12 +96,12 @@
         </div>
         <div class="main_body" class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Photography</a></li>
-            <li><a href="#">Resume Summary</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="{{ url('/') }}">Home</a></li>
+            <li><a href="{{ url('/photography') }}">Photography</a></li>
+            <li><a href="{{ url('/resume') }}">Resume Summary</a></li>
+            <li><a href="{{ url('/projects') }}">Projects</a></li>
+            <li><a href="{{ url('/resources') }}">Resources</a></li>
+            <li><a href="{{ url('/contact') }}">Contact</a></li>
          
             
           </ul >
