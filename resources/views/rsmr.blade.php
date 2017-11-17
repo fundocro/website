@@ -1,5 +1,5 @@
 @extends('layouts.master')
 
 @section('content')
-<p>PHOTO PAGE</p>
+<p>RESUME PAGE</p>
 @endsection
