@@ -77,8 +77,10 @@
  
       
       #footer{
+        background-image: url('img/denmark.png');
+        background-size: contain;
         border-top:0.5px solid #ccc9c9 ;
-        height: 250px;
+        height: 280px;
         padding-top: 10px;
       
         margin-top:200px;
@@ -102,7 +104,25 @@
       } 
       
 
-    
+      #footer_style a{
+          color: #020202b3;
+          font-family:fantasy;
+          font-size: 18px;
+          letter-spacing: 0.12em;
+      }
+      #footer_style h3{
+          color: #020202b3;
+          font-family:monospace;
+          font-size: 30px;
+          letter-spacing: 0.12em;
+      }
+      .btn-info{
+          color:#100000;
+          font-family: monospace;
+          font-size: large;
+          background-color: #06060600;
+          border-style: none;
+      }
     
   </style>
     
@@ -182,16 +202,20 @@
             <div class="container">
                 <div class="row">
           
-        
-                    <div class="col-lg-4  col-md-2 col-sm-4 col-xs-6">
-                        <h3> Lorem Ipsum </h3>
-                        <ul>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
-                        </ul>
-                    </div>
+                    <div id="footer_style">
+                        <div class="col-lg-4  col-md-2 col-sm-4 col-xs-6">
+                            <h3> Where To Next </h3>
+                            <ul>
+                                <li> <a href="#"> Wiew My Photography </a> </li>
+                                <li> <a href="#"> Projects </a> </li>
+                                <li> <a href="#"> Resources </a> </li>
+                                <li> <a href="#"> About </a> </li>
+                                <li> <a href="#"> Resume Summary </a> </li>
+                                <li> <a href="#"> Contact </a> </li>
+                            </ul>
+                        </div>
+                    </div>  
+                    <div id="footer_style">
                     <div class="col-lg-3  col-md-2 col-sm-4 col-xs-6">
                         <h3> Lorem Ipsum </h3>
                         <ul>
@@ -201,16 +225,18 @@
                             <li> <a href="#"> Lorem Ipsum </a> </li>
                         </ul>
                     </div>
+                        </div>
+                    <div id="footer_style">
                     <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-                        <h3> Send me a message </h3>
+                        <h3> Message Me! </h3>
                       
                                 <div class="input-append newsletter-box text-center">
                                     <input type="text" class="full text-left" placeholder="Name ">
                                     <input type="text" class="full text-left" placeholder="Email ">
                                     <textarea rows="4" cols="25" placeholder="Your question here" style="margin-left: 100px;margin-top: 5px;"></textarea>
-                                    <button class="btn  bg-gray" type="button"> SUBMIT ... <i class="fa fa-long-arrow-right"> </i> </button>
+                                    <button class="btn btn-info" type="button"> SUBMIT ... <i class="fa fa-long-arrow-right"> </i> </button>
                                 </div>
-                      
+                      </div>
                     </div>
                     <div class="col-lg-2  col-md-3 col-sm-6 col-xs-12 ">
                         <ul class="social">
@@ -230,7 +256,7 @@
 
         <div class="footer-bottom">
             <div class="container">
-                <p class="text-center" > <span style="">2017 <i class="fa fa-link"> G.F </i> </span>   </p>
+                <p class="text-center" > <span style="">2017 <a href="https://github.com/fundocro/website"><i class="fa fa-link"> G.F </i></a> </span>   </p>
 
             </div>
         </div>
