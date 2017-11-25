@@ -165,7 +165,7 @@
           <div class="row content">
 
             <div  class="text-left" class="col-sm-8 " class="panel panel-default" > 
-              <h1 id="name">Goran Fundak's Website</h1>
+              <img src="img/logo.png" style="width:500px;margin-top:40px;">
                 
                 @yield('header_content')
                 

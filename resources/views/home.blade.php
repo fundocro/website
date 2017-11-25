@@ -3,19 +3,29 @@
  
 <div id="home_head"> 
     
- 
-</div>
-
-    <p>Hi, welcome to my digital world!</p>
+ <p>Hi, welcome to my digital world!</p>
     <p> 
         I really didn't know what to put here so I decided to put some of my favorite quotes...
     </p> 
 
+</div>
+
+    
 
 @endsection
+
 @section('body_content')
 <style>
     
+    #home_head p{
+        font-family:serif;
+        font-style:oblique;
+        font-weight: normal;
+        line-height: 34px;
+        font-size: 21px;
+        letter-spacing: 0.06em;
+        text-indent: 20px;
+    }
     .body_content{
        margin: 0 auto;
     }
