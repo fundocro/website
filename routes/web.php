@@ -25,6 +25,10 @@ Route::get('/projects', function () {
     return view('projects.projects');
 });
 
+Route::get('/about',function(){
+    return view('/about');
+});
+
 Route::get('/resources', function () {
     return view('rsc');
 });

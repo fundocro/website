@@ -4,12 +4,12 @@
   <title>Gogi's Web</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-  <script src="jquery/jquery-3.2.1.slim.min.js"></script>
-    
-  <script src="js/bootstrap.min.js"></script>
-    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="jquery/jquery-3.2.1.slim.min.js"></script>  
+    <script src="js/bootstrap.min.js"></script>
+
+
+    <link href="fonts/font-awesome.min.css" rel="stylesheet">
     
   <style>
       .main_body{
@@ -54,7 +54,7 @@
           margin-top:-5%;
       }
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-    .row.content {height: 450px}
+    .row.content {height: 800px}
     
     /* Set gray background color and 100% height */
     .sidenav {
@@ -73,17 +73,43 @@
       }
       .row.content {height:auto;} 
     }
+      
+ 
+      
       #footer{
-        
-        margin-top:5%;
-        margin-bottom:5%;
+        border-top:0.5px solid #ccc9c9 ;
+        height: 250px;
+        padding-top: 10px;
+      
+        margin-top:200px;
+       
+      
       }
+      
+     @font-face {
+        font-family: 'Unkempt-Bold.woff';
+        src: url('Unkempt-Bold.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+
+      }
+      
+ 
+      
+      #qote_widget{
+          margin-top: 30px;
+          margin-bottom: 30px;
+      } 
+      
+
+    
+    
   </style>
     
 </head>
     
 <body>
-    {{--    nav--}}
+    {{--nav--}}
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -98,38 +124,119 @@
           <ul class="nav navbar-nav">
             <li><a href="{{ url('/') }}">Home</a></li>
             <li><a href="{{ url('/photography') }}">Photography</a></li>
-            <li><a href="{{ url('/resume') }}">Resume Summary</a></li>
             <li><a href="{{ url('/projects') }}">Projects</a></li>
             <li><a href="{{ url('/resources') }}">Resources</a></li>
-            <li><a href="{{ url('/contact') }}">Contact</a></li>
-         
-            
+            <li><a href="{{ url('/about') }}">About</a></li>
+            <li><a href="{{ url('/resume') }}">Resume Summary</a></li>
+            <li><a href="{{ url('/contact') }}">Contact</a></li>   
           </ul >
-            
-
         </div>
-
         <div id="wip">
           <ul class="nav navbar-nav navbar-right" >
             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> WIP</a></li>
           </ul>
-        </div>
-
-            
+        </div>      
       </div>
     </nav>
     
-    @yield('content')
-    
+    {{--main_body--}}
+    <div class="main_body" id="top" class="container" >
+        <div class="container-fluid text-center">  
+          <div class="row content">
+
+            <div  class="text-left" class="col-sm-8 " class="panel panel-default" > 
+              <h1 id="name">Goran Fundak's Website</h1>
+                
+                @yield('header_content')
+                
+              </div>
+         
+              <div id="qote_widget" align="left">
+                <iframe align="center" src="http://widget.calendarlabs.com/v1/quot.php?                         cid=101&uid=3423316097&c=random&l=en&cbg=FFFFFF&cb=1&cbc=000000&cf=calibri&cfg=000000&qfs=bi&qta=center&tfg=000000&tfs=bi&afc=000000&afs=i" width="188" height="210" marginwidth=0 marginheight=0 frameborder=0 scrolling=no allowtransparency='true'>Loading...
+                </iframe>
+                  <div align="center" style="width:240px;font-size:10px;color:#333;">Daily Quotes by 
+                      <a href="https://www.calendarlabs.com/" target="_blank" rel="nofollow" style="font-size:10px;text-decoration:none;color:#333;">CalendarLabs</a>
+                  </div>
+              </div>
+         
+              
+{{--              <hr class="hr_override">--}}
+              
+            <div  class="text-left" class="col-sm-8 " class="main_body"> 
+                @yield('body_content')
+            </div> 
+                      
+          </div>{{--/ row content--}}
+        </div>
+           
+
+    </div>{{--/ main_body--}}
+        
 {{--footer--}}
-  <hr class="hr_override">
-    <footer id="footer"  class="site-footer">
-      
-        <div class="footer_wrapper">
-             <div class="container">
-             <p>liqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in </p>
+
+  
+
+                
+    <footer>
+        <div class="footer" id="footer">
+            <div class="container">
+                <div class="row">
+          
+        
+                    <div class="col-lg-4  col-md-2 col-sm-4 col-xs-6">
+                        <h3> Lorem Ipsum </h3>
+                        <ul>
+                            <li> <a href="#"> Lorem Ipsum </a> </li>
+                            <li> <a href="#"> Lorem Ipsum </a> </li>
+                            <li> <a href="#"> Lorem Ipsum </a> </li>
+                            <li> <a href="#"> Lorem Ipsum </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3  col-md-2 col-sm-4 col-xs-6">
+                        <h3> Lorem Ipsum </h3>
+                        <ul>
+                            <li> <a href="#"> Lorem Ipsum </a> </li>
+                            <li> <a href="#"> Lorem Ipsum </a> </li>
+                            <li> <a href="#"> Lorem Ipsum </a> </li>
+                            <li> <a href="#"> Lorem Ipsum </a> </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
+                        <h3> Send me a message </h3>
+                      
+                                <div class="input-append newsletter-box text-center">
+                                    <input type="text" class="full text-left" placeholder="Name ">
+                                    <input type="text" class="full text-left" placeholder="Email ">
+                                    <textarea rows="4" cols="25" placeholder="Your question here" style="margin-left: 100px;margin-top: 5px;"></textarea>
+                                    <button class="btn  bg-gray" type="button"> SUBMIT ... <i class="fa fa-long-arrow-right"> </i> </button>
+                                </div>
+                      
+                    </div>
+                    <div class="col-lg-2  col-md-3 col-sm-6 col-xs-12 ">
+                        <ul class="social">
+                            <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
+                            <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--/.row--> 
+            </div>
+            <!--/.container--> 
+        </div>
+        <!--/.footer-->
+
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="text-center" > <span style="">2017 <i class="fa fa-link"> G.F </i> </span>   </p>
+
             </div>
         </div>
     </footer>
+                    <!--/.footer-bottom--> 
+
+    
 </body>
 </html>
