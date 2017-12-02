@@ -3,13 +3,15 @@
 <head>
   <title>Gogi's Web</title>
   <meta charset="utf-8">
+    
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="jquery/jquery-3.2.1.slim.min.js"></script>  
     <script src="js/bootstrap.min.js"></script>
 
-
     <link href="fonts/font-awesome.min.css" rel="stylesheet">
+    
     
   <style>
       .main_body{
@@ -77,15 +79,19 @@
  
       
       #footer{
-        background-image: url('img/denmark.png');
-        background-size: contain;
         border-top:0.5px solid #ccc9c9 ;
         height: 280px;
         padding-top: 10px;
-      
         margin-top:200px;
        
-      
+    
+      background: url('img/denmark.png') no-repeat center center fixed; 
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+  
+          
       }
       
      @font-face {
@@ -123,7 +129,11 @@
           background-color: #06060600;
           border-style: none;
       }
-    
+      #social i{
+          margin-top: 20px;
+          margin-right:10px;
+      }
+
   </style>
     
 </head>
@@ -206,23 +216,23 @@
                         <div class="col-lg-4  col-md-2 col-sm-4 col-xs-6">
                             <h3> Where To Next </h3>
                             <ul>
-                                <li> <a href="#"> Wiew My Photography </a> </li>
-                                <li> <a href="#"> Projects </a> </li>
-                                <li> <a href="#"> Resources </a> </li>
-                                <li> <a href="#"> About </a> </li>
-                                <li> <a href="#"> Resume Summary </a> </li>
-                                <li> <a href="#"> Contact </a> </li>
+                                <li> <a href="{{url('/photography')}}"> Wiew My Photography </a> </li>
+                                <li> <a href="{{url('/projects')}}"> Projects </a> </li>
+                                <li> <a href="{{url('/resources')}}"> Resources </a> </li>
+                                <li> <a href="{{url('/about')}}"> About </a> </li>
+                                <li> <a href="{{url('/resume')}}"> Resume Summary </a> </li>
+                                <li> <a href="{{url('/contact')}}"> Contact </a> </li>
                             </ul>
                         </div>
                     </div>  
                     <div id="footer_style">
                     <div class="col-lg-3  col-md-2 col-sm-4 col-xs-6">
-                        <h3> Lorem Ipsum </h3>
+                        <h3> My Points Of Interest </h3>
                         <ul>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
-                            <li> <a href="#"> Lorem Ipsum </a> </li>
+                            <li> <a href="https://laravel.com/docs/5.4/installation"> Laravel </a> </li>
+                            <li> <a href="https://www.mailgun.com/"> Mailgun </a> </li>
+                            <li> <a href="https://github.com/fundocro?tab=repositories"> Github </a> </li>
+                            <li> <a href="https://www.hosting24.com/"> Hosting24 </a> </li>
                         </ul>
                     </div>
                         </div>
@@ -238,14 +248,14 @@
                                 </div>
                       </div>
                     </div>
-                    <div class="col-lg-2  col-md-3 col-sm-6 col-xs-12 ">
-                        <ul class="social">
-                            <li> <a href="#"> <i class=" fa fa-facebook">   </i> </a> </li>
-                            <li> <a href="#"> <i class="fa fa-twitter">   </i> </a> </li>
-                            <li> <a href="#"> <i class="fa fa-google-plus">   </i> </a> </li>
-                            <li> <a href="#"> <i class="fa fa-pinterest">   </i> </a> </li>
-                            <li> <a href="#"> <i class="fa fa-youtube">   </i> </a> </li>
-                        </ul>
+                    
+                     <div id="social" class="col-lg-2  col-md-3 col-sm-6 col-xs-12 ">
+                     
+                     
+                    <a href="https://twitter.com/Yugostorm"> <i class="fa fa-twitter fa-3x" style="color:#4a4c4e;"> </i> </a> 
+                    <a href="https://github.com/fundocro"> <i class="fa fa-github fa-3x" style="color:#4a4c4e;" > </i> </a> 
+                     <a href="https://www.youtube.com/channel/UC7rCwik9X_4EcPtcoM6LyzA"> <i class="fa fa-youtube fa-3x" style="color:#4a4c4e;"> </i> </a> 
+             
                     </div>
                 </div>
                 <!--/.row--> 
