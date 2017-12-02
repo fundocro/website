@@ -239,14 +239,45 @@
                     <div id="footer_style">
                     <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
                         <h3> Message Me! </h3>
+                        
                       
-                                <div class="input-append newsletter-box text-center">
+                        <div class="form-group">
+             
+                      
+                        </div>
+                       
+                        <div class="input-append newsletter-box text-center">
+                            {!!Form::open(['action'=>'mail@store'])!!}
+
+                              <div class="form-group">
+                                  
+                                  {!!Form::text('title','Name:',['class'=>'form-control'])!!}
+                              </div>
+                            
+                              <div class="form-group">
+                                  
+                                  {!!Form::text('email','Email:',['class'=>'form-control'])!!}
+                              </div>
+                            
+                               <div class="form-group" style="display: inline-block">
+                                  
+                                   {!!Form::textarea('body','Your Question Here',['class'=>'formcontrol','rows'=>3,'cols'=>25])!!}
+                               </div>
+                           
+                              <div class="form-group" style="display: inline-block">
+                                  {!!Form::submit('SEND',['class'=>'btn btn-info'])!!}
+                              </div>
+
+                            {!!Form::close()!!}
+{{--
                                     <input type="text" class="full text-left" placeholder="Name ">
                                     <input type="text" class="full text-left" placeholder="Email ">
                                     <textarea rows="4" cols="25" placeholder="Your question here" style="margin-left: 100px;margin-top: 5px;"></textarea>
                                     <button class="btn btn-info" type="button"> SUBMIT ... <i class="fa fa-long-arrow-right"> </i> </button>
+--}}
                                 </div>
                       </div>
+                        
                     </div>
                     
                      <div id="social" class="col-lg-2  col-md-3 col-sm-6 col-xs-12 ">

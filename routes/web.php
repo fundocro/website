@@ -39,5 +39,5 @@ Route::get('/wip', function () {
     return view('wip');
 });
 
-Route::get('/mail', 'mail@mail_form');
+Route::resource('/mail','mail');
 
