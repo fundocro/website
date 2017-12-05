@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;//added
 
-class mail extends Controller
+class Send_Mail extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,9 +14,7 @@ class mail extends Controller
      */
     public function index()
     {
-        $input=$request->all();
-        print_r($input);
-//         return view('/contact');
+        //
     }
 
     /**
@@ -36,9 +35,29 @@ class mail extends Controller
      */
     public function store(Request $request)
     {
-        $input=$request->all();
-        print_r($input);
-//        return view('/contact');
+        
+       if($request){
+          Mail::send('mails.footer_message', array(
+            'name' => $request->get('name'),
+            'email' =>$request->get('email'),
+            'body' => $request->get('body')
+        ),
+                    
+        function ($message){
+            $message->to('goggy25@gmail.com', 'gogiweb')->subject('website question');
+           
+        }); 
+         
+//         echo "<script>alert('Thanks your message has been submitted! ');</script>";  
+           	
+            return redirect()->to('/')->with('message', 'Your message has been submitted. Thanks for contacting me!');
+       }else{
+          echo "<script>alert('Sorry something went wrong :( ');</script>"; 
+           return back();
+       }
+         
+        
+         
     }
 
     /**

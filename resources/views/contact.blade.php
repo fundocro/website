@@ -8,7 +8,7 @@
     <p>
       Hi, my name is written in big letters above lol. 
     </p>
-
+    <p>{{@content}}</p>
  
 @endsection
 

@@ -173,7 +173,7 @@
     <div class="main_body" id="top" class="container" >
         <div class="container-fluid text-center">  
           <div class="row content">
-
+            <p class="text-left" style="margin-top: 20px;color:#df6e6e;font-size:large;text-decoration: underline;">{{ Session::get('message') }}</p>
             <div  class="text-left" class="col-sm-8 " class="panel panel-default" > 
               <img src="img/logo.png" style="width:500px;margin-top:40px;">
                 
@@ -247,11 +247,11 @@
                         </div>
                        
                         <div class="input-append newsletter-box text-center">
-                            {!!Form::open(['action'=>'mail@store'])!!}
+                            {!!Form::open(['action'=>'Send_Mail@store'])!!}
 
                               <div class="form-group">
                                   
-                                  {!!Form::text('title','Name:',['class'=>'form-control'])!!}
+                                  {!!Form::text('name','Name:',['class'=>'form-control'])!!}
                               </div>
                             
                               <div class="form-group">
@@ -267,8 +267,9 @@
                               <div class="form-group" style="display: inline-block">
                                   {!!Form::submit('SEND',['class'=>'btn btn-info'])!!}
                               </div>
-
+                                
                             {!!Form::close()!!}
+                            
 {{--
                                     <input type="text" class="full text-left" placeholder="Name ">
                                     <input type="text" class="full text-left" placeholder="Email ">

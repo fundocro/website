@@ -35,9 +35,19 @@ Route::get('/resources', function () {
 Route::get('/contact', function () {
     return view('contact');
 });
+
+
 Route::get('/wip', function () {
     return view('wip');
 });
 
-Route::resource('/mail','mail');
+Route::resource('/mail','Send_Mail');
+
+//Route::get('/send', function(){
+//    
+//    Mail::send('mails.test', [], function ($message){
+//        $message->to('goggy25@gmail.com', 'Goran')->subject('Welcome!');
+//    });
+//});
+
 
