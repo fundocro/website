@@ -18,7 +18,7 @@
           
           margin-left: 20%;
           margin-right: 30%;
-          display: inline-block;
+/*          display: inline-block;*/
         
       }
     
@@ -52,9 +52,7 @@
       #wip a:hover{
          color: black !important;  
       }
-      #top{
-          margin-top:-5%;
-      }
+  
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 800px}
     
@@ -79,17 +77,25 @@
  
       
       #footer{
-        border-top:0.5px solid #ccc9c9 ;
-        height: 280px;
-        padding-top: 10px;
-        margin-top:200px;
+          
+  
+        position:fixed;
        
-    
+        bottom: 0;
+       
+
+        width: 100%;
+       
+        height:auto;
+       
+   
+/*
       background: url('img/denmark.png') no-repeat center center fixed; 
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
+*/
   
           
       }
@@ -131,7 +137,7 @@
       }
       #social i{
           margin-top: 20px;
-          margin-right:10px;
+          margin-left:20px;
       }
 
   </style>
@@ -140,6 +146,7 @@
     
 <body>
     {{--nav--}}
+    <div class="wrapper">
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -161,16 +168,18 @@
             <li><a href="{{ url('/contact') }}">Contact</a></li>   
           </ul >
         </div>
+{{--
         <div id="wip">
           <ul class="nav navbar-nav navbar-right" >
             <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> WIP</a></li>
           </ul>
         </div>      
+--}}
       </div>
     </nav>
     
     {{--main_body--}}
-    <div class="main_body" id="top" class="container" >
+    <div class="main_body" class="container" >
         <div class="container-fluid text-center">  
           <div class="row content">
             <p class="text-left" style="margin-top: 20px;color:#df6e6e;font-size:large;text-decoration: underline;">{{ Session::get('message') }}</p>
@@ -181,19 +190,14 @@
                 
               </div>
          
-              <div id="qote_widget" align="left">
-                <iframe align="center" src="http://widget.calendarlabs.com/v1/quot.php?                         cid=101&uid=3423316097&c=random&l=en&cbg=FFFFFF&cb=1&cbc=000000&cf=calibri&cfg=000000&qfs=bi&qta=center&tfg=000000&tfs=bi&afc=000000&afs=i" width="188" height="210" marginwidth=0 marginheight=0 frameborder=0 scrolling=no allowtransparency='true'>Loading...
-                </iframe>
-                  <div align="center" style="width:240px;font-size:10px;color:#333;">Daily Quotes by 
-                      <a href="https://www.calendarlabs.com/" target="_blank" rel="nofollow" style="font-size:10px;text-decoration:none;color:#333;">CalendarLabs</a>
-                  </div>
-              </div>
-         
-              
-{{--              <hr class="hr_override">--}}
               
             <div  class="text-left" class="col-sm-8 " class="main_body"> 
+                
+                
                 @yield('body_content')
+                
+                
+                
             </div> 
                       
           </div>{{--/ row content--}}
@@ -208,12 +212,10 @@
 
                 
     <footer>
-        <div class="footer" id="footer">
-            <div class="container">
-                <div class="row">
+        <div  id="footer">
           
                     <div id="footer_style">
-                        <div class="col-lg-4  col-md-2 col-sm-4 col-xs-6">
+                        <div class="col-lg-9  col-md-2 col-sm-4 col-xs-6">
                             <h3> Where To Next </h3>
                             <ul>
                                 <li> <a href="{{url('/photography')}}"> Wiew My Photography </a> </li>
@@ -222,29 +224,22 @@
                                 <li> <a href="{{url('/about')}}"> About </a> </li>
                                 <li> <a href="{{url('/resume')}}"> Resume Summary </a> </li>
                                 <li> <a href="{{url('/contact')}}"> Contact </a> </li>
+                                <li>
+                                    <p> 
+                                        <span style="">2017 
+                                            <a href="https://github.com/fundocro/website"><i class="fa fa-link"> G.F </i></a> 
+                                        </span> 
+                                    </p>
+
+                                </li>
                             </ul>
                         </div>
                     </div>  
+ 
                     <div id="footer_style">
-                    <div class="col-lg-3  col-md-2 col-sm-4 col-xs-6">
-                        <h3> My Points Of Interest </h3>
-                        <ul>
-                            <li> <a href="https://laravel.com/docs/5.4/installation"> Laravel </a> </li>
-                            <li> <a href="https://www.mailgun.com/"> Mailgun </a> </li>
-                            <li> <a href="https://github.com/fundocro?tab=repositories"> Github </a> </li>
-                            <li> <a href="https://www.hosting24.com/"> Hosting24 </a> </li>
-                        </ul>
-                    </div>
-                        </div>
-                    <div id="footer_style">
-                    <div class="col-lg-3  col-md-3 col-sm-6 col-xs-12 ">
-                        <h3> Message Me! </h3>
+                    <div class="col-lg-1  col-md-2 col-sm-6 col-xs-12 ">
+                        <h2> Contact ... </h2>
                         
-                      
-                        <div class="form-group">
-             
-                      
-                        </div>
                        
                         <div class="input-append newsletter-box text-center">
                             {!!Form::open(['action'=>'Send_Mail@store'])!!}
@@ -261,7 +256,7 @@
                             
                                <div class="form-group" style="display: inline-block">
                                   
-                                   {!!Form::textarea('body','Your Question Here',['class'=>'formcontrol','rows'=>3,'cols'=>25])!!}
+                                   {!!Form::textarea('body','',['class'=>'formcontrol','rows'=>6,'cols'=>40])!!}
                                </div>
                            
                               <div class="form-group" style="display: inline-block">
@@ -270,41 +265,28 @@
                                 
                             {!!Form::close()!!}
                             
-{{--
-                                    <input type="text" class="full text-left" placeholder="Name ">
-                                    <input type="text" class="full text-left" placeholder="Email ">
-                                    <textarea rows="4" cols="25" placeholder="Your question here" style="margin-left: 100px;margin-top: 5px;"></textarea>
-                                    <button class="btn btn-info" type="button"> SUBMIT ... <i class="fa fa-long-arrow-right"> </i> </button>
---}}
-                                </div>
+
+                        </div>
                       </div>
                         
                     </div>
-                    
+
+                                 
                      <div id="social" class="col-lg-2  col-md-3 col-sm-6 col-xs-12 ">
                      
-                     
-                    <a href="https://twitter.com/Yugostorm"> <i class="fa fa-twitter fa-3x" style="color:#4a4c4e;"> </i> </a> 
-                    <a href="https://github.com/fundocro"> <i class="fa fa-github fa-3x" style="color:#4a4c4e;" > </i> </a> 
-                     <a href="https://www.youtube.com/channel/UC7rCwik9X_4EcPtcoM6LyzA"> <i class="fa fa-youtube fa-3x" style="color:#4a4c4e;"> </i> </a> 
+
+                        <a href="https://twitter.com/Yugostorm"> <i class="fa fa-twitter fa-3x" style="color:#4a4c4e;"> </i> </a> 
+                        <a href="https://github.com/fundocro"> <i class="fa fa-github fa-3x" style="color:#4a4c4e;" > </i> </a> 
+                         <a href="https://www.youtube.com/channel/UC7rCwik9X_4EcPtcoM6LyzA"> <i class="fa fa-youtube fa-3x" style="color:#4a4c4e;"> </i> </a> 
              
                     </div>
-                </div>
-                <!--/.row--> 
-            </div>
-            <!--/.container--> 
+     
         </div>
         <!--/.footer-->
-
-        <div class="footer-bottom">
-            <div class="container">
-                <p class="text-center" > <span style="">2017 <a href="https://github.com/fundocro/website"><i class="fa fa-link"> G.F </i></a> </span>   </p>
-
-            </div>
-        </div>
+   
     </footer>
-                    <!--/.footer-bottom--> 
-
-    
+ 
+</div>
 </body>
+   
 </html>

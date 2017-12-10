@@ -10,7 +10,14 @@
 
 </div>
 
-    
+      <div id="qote_widget" align="left">
+                <iframe align="center" src="http://widget.calendarlabs.com/v1/quot.php?                         cid=101&uid=3423316097&c=random&l=en&cbg=FFFFFF&cb=1&cbc=000000&cf=calibri&cfg=000000&qfs=bi&qta=center&tfg=000000&tfs=bi&afc=000000&afs=i" width="188" height="210" marginwidth=0 marginheight=0 frameborder=0 scrolling=no allowtransparency='true'>Loading...
+                </iframe>
+                  <div align="center" style="width:240px;font-size:10px;color:#333;">Daily Quotes by 
+                      <a href="https://www.calendarlabs.com/" target="_blank" rel="nofollow" style="font-size:10px;text-decoration:none;color:#333;">CalendarLabs</a>
+                  </div>
+              </div>
+           
 
 @endsection
 
