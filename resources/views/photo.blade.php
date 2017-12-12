@@ -4,7 +4,8 @@
 
 @section('header_content')
 
-    <h4>Hi! Feel free to browse true my amater photos ... </h4>                
+    <h4>Hi! Feel free to browse true my photos ... </h4> 
+    <h4>To view my fully photo gallery visit my <a id="a_style" href="https://www.flickr.com/photos/135275254@N04/">flickr page</a> </h4> 
    
 
 @endsection
@@ -175,83 +176,84 @@
 
 <hr class="hr_override"> 
 
+<div clas="col-lg-6  col-md-2 col-sm-4 col-xs-12">
 <div class="circle_img">
     
     <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/12.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/12.png')"></div>
 </div>
 
 <div class="circle_img">
         <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/8.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/8.png')"></div>
 </div>
 
 <div class="circle_img">
     <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/11.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/11.png')"></div>
 </div>
 
 <div class="circle_img">
     
     <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/7.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/7.png')"></div>
 </div>
 
 <div class="circle_img">
         <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/4.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/4.png')"></div>
 </div>
 
 <div class="circle_img">
     <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/15.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/15.png')"></div>
 </div>
 <div class="circle_img">
     
     <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/1.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/1.png')"></div>
 </div>
 
 <div class="circle_img">
         <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/2.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/2.png')"></div>
 </div>
 
 <div class="circle_img">
     <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/14.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/14.png')"></div>
 </div>
 <div class="circle_img">
     
     <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/9.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/9.png')"></div>
 </div>
 
 <div class="circle_img">
         <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/13.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/13.png')"></div>
 </div>
 
 <div class="circle_img">
     <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/6.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/6.png')"></div>
 </div>
 <div class="circle_img">
     
     <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/3.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/3.png')"></div>
 </div>
 
 <div class="circle_img">
         <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/5.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/5.png')"></div>
 </div>
 
 <div class="circle_img">
     <div class="imageDiv"></div>
-    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/10.jpg')"></div>
+    <div class="imageDiv imageDiv1 bottomDiv" style="background-image: url('img/10.png')"></div>
 </div>
-
+</div>
 
     <!-- /.navbar-wrapper -->
     <!-- Carousel -->

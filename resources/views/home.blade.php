@@ -25,6 +25,7 @@
 <style>
     
     #home_head p{
+        
         font-family:serif;
         font-style:oblique;
         font-weight: normal;

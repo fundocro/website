@@ -74,19 +74,22 @@
       .row.content {height:auto;} 
     }
       
- 
-      
-      #footer{
-          
-  
-        position:fixed;
-       
-        bottom: 0;
-       
 
-        width: 100%;
+      html #footer{
+          
+
+          
+   top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+
        
+       
+/*
+        bottom: 0;
+        left:0;
+        width: 100%;
+        position:fixed;
         height:auto;
+*/
        
    
 /*
@@ -115,15 +118,18 @@
           margin-bottom: 30px;
       } 
       
-
-      #footer_style a{
-          color: #020202b3;
+      #a_style{
+          color: #636570;
+      }
+      
+      #footer_style a {
+          color: #636570;
           font-family:fantasy;
           font-size: 18px;
           letter-spacing: 0.12em;
       }
       #footer_style h3{
-          color: #020202b3;
+          color: #636570;
           font-family:monospace;
           font-size: 30px;
           letter-spacing: 0.12em;
@@ -132,12 +138,22 @@
           color:#100000;
           font-family: monospace;
           font-size: large;
-          background-color: #06060600;
+          background-color: #636570;
           border-style: none;
       }
       #social i{
           margin-top: 20px;
           margin-left:20px;
+      }
+      .twitter{
+          position: relative;
+          float: right;
+          width:350px;
+          margin-right: 50px;
+          margin-top: 30px;
+      }
+      #logo{
+          margin-bottom: 20px;
       }
 
   </style>
@@ -150,7 +166,9 @@
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
         <div class="navbar-header">
+            
 {{--          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">--}}
+            
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>                        
@@ -184,7 +202,7 @@
           <div class="row content">
             <p class="text-left" style="margin-top: 20px;color:#df6e6e;font-size:large;text-decoration: underline;">{{ Session::get('message') }}</p>
             <div  class="text-left" class="col-sm-8 " class="panel panel-default" > 
-              <img src="img/logo.png" style="width:500px;margin-top:40px;">
+              <img id="logo" src="img/logo.png" style="width:500px;margin-top:40px;">
                 
                 @yield('header_content')
                 
@@ -214,8 +232,18 @@
     <footer>
         <div  id="footer">
           
+                             
+                 
+                         <div  class="twitter">
+                         
+                                 <a class="twitter-timeline"  href="https://twitter.com/hashtag/laravel" data-widget-id="939926524760920064">#laravel Tweets</a>
+                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+                            </div>    
+            
+            
                     <div id="footer_style">
-                        <div class="col-lg-9  col-md-2 col-sm-4 col-xs-6">
+                        <div class="col-lg-9  col-md-4 col-sm-6 col-xs-12">
                             <h3> Where To Next </h3>
                             <ul>
                                 <li> <a href="{{url('/photography')}}"> Wiew My Photography </a> </li>
@@ -223,11 +251,16 @@
                                 <li> <a href="{{url('/resources')}}"> Resources </a> </li>
                                 <li> <a href="{{url('/about')}}"> About </a> </li>
                                 <li> <a href="{{url('/resume')}}"> Resume Summary </a> </li>
-                                <li> <a href="{{url('/contact')}}"> Contact </a> </li>
+                                <li> <a href="https://laravel.com/"> Laravel </a> </li>
+                                <li> <a href="https://www.hosting24.com/"> Hosting24 </a> </li>
+                                <li> <a href="https://twitter.com/Yugostorm"> Twitter </a> </li>
+                                <li> <a href="https://github.com/fundocro"> Github </a> </li>
+                                <li> <a href=" https://www.youtube.com/channel/UC7rCwik9X_4EcPtcoM6LyzA/featured"> Youtube </a> </li>
+      
                                 <li>
                                     <p> 
                                         <span style="">2017 
-                                            <a href="https://github.com/fundocro/website"><i class="fa fa-link"> G.F </i></a> 
+                                            <a href="{{url('/contact')}}"><i class="fa fa-link"> G.F </i></a> 
                                         </span> 
                                     </p>
 
@@ -236,8 +269,11 @@
                         </div>
                     </div>  
  
+   
+            
+            
                     <div id="footer_style">
-                    <div class="col-lg-1  col-md-2 col-sm-6 col-xs-12 ">
+                    <div class="col-lg-1  col-md-4 col-sm-6 col-xs-12 ">
                         <h2> Contact ... </h2>
                         
                        
@@ -270,16 +306,20 @@
                       </div>
                         
                     </div>
-
-                                 
-                     <div id="social" class="col-lg-2  col-md-3 col-sm-6 col-xs-12 ">
-                     
-
+            
+                    <div id="social" class="col-lg-2  col-md-4 col-sm-6 col-xs-12 ">
+                         
+              
                         <a href="https://twitter.com/Yugostorm"> <i class="fa fa-twitter fa-3x" style="color:#4a4c4e;"> </i> </a> 
                         <a href="https://github.com/fundocro"> <i class="fa fa-github fa-3x" style="color:#4a4c4e;" > </i> </a> 
                          <a href="https://www.youtube.com/channel/UC7rCwik9X_4EcPtcoM6LyzA"> <i class="fa fa-youtube fa-3x" style="color:#4a4c4e;"> </i> </a> 
              
                     </div>
+
+               
+                         
+            
+       
      
         </div>
         <!--/.footer-->
