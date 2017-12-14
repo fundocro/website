@@ -6,6 +6,7 @@
 
     <p>About PAGE</p>                
     <p>Hi, my name is written in big letters above lol.</p>
+    <p>I am a self thought wannabe web developer, currently point of interest for me is back end development mainly using PHP / Laravel.. The main goal of my coding journey is to be full stack web developer!</p>
 @endsection
 
 @section('body_content')

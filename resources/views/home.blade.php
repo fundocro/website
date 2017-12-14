@@ -1,7 +1,7 @@
 @extends('layouts.master')
 @section('header_content')
  
-<div id="home_head"> 
+<div id="layout_head"> 
     
  <p>Hi, welcome to my digital world!</p>
     <p> 
@@ -24,16 +24,7 @@
 @section('body_content')
 <style>
     
-    #home_head p{
-        
-        font-family:serif;
-        font-style:oblique;
-        font-weight: normal;
-        line-height: 34px;
-        font-size: 21px;
-        letter-spacing: 0.06em;
-        text-indent: 20px;
-    }
+ 
     .body_content{
        margin: 0 auto;
     }

@@ -155,6 +155,26 @@
       #logo{
           margin-bottom: 20px;
       }
+         #layout_head p{
+        
+        font-family:serif;
+        font-style:oblique;
+        font-weight: normal;
+        line-height: 34px;
+        font-size: 21px;
+        letter-spacing: 0.06em;
+        text-indent: 20px;
+    }
+          #layout_head_mini p{
+        
+        font-family:serif;
+        font-style:oblique;
+        font-weight: normal;
+        line-height: 34px;
+        font-size: 20px;
+        letter-spacing: 0.03em;
+        text-indent: 10px;
+    }
 
   </style>
     
