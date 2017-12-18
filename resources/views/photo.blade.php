@@ -5,7 +5,7 @@
 @section('header_content')
 <div id="layout_head">
     <p>Hi! Feel free to browse true my photos ... </p> 
-    <p>To view my fully photo gallery visit my <a id="a_style" href="https://www.flickr.com/photos/135275254@N04/"><span style="text-decoration: underline">flickr page</span></a> </p> 
+    <p>To view my full photo gallery visit my <a id="a_style" href="https://www.flickr.com/photos/135275254@N04/"><span style="text-decoration: underline">flickr page</span></a> </p> 
 </div>
 
 @endsection

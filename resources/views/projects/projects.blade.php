@@ -7,25 +7,15 @@
     <div id="layout_head">
         <p>
             I bet you were expecting something fancy here :) <br>
-            But it's just some of my noob web projects <br>
+            But it's just some of my noob web projects. <br>
             Take a peek! 
         </p>
     </div>
 @endsection
 
 @section('body_content')
-<style>
-    .projects{
-        margin-top: 100px;
-        display: block;
-    }
-    .img_project{
-        margin-top: 50px;
-        width: 800px;
-        height: 450px;
-    }
-</style>
-<div class="projects" id="layout_head_mini" >
+
+<div class="body_content" id="layout_head_mini" >
         
     <h4>First of them is of course my website.</h4><br>
     <p>
@@ -42,7 +32,7 @@
 </div>
 <hr class="hr_override">
 
-<div class="projects" id="layout_head_mini">
+<div class="body_content" id="layout_head_mini">
         
     
 <h4>Second project that I would like to present here</h4><br>
@@ -62,7 +52,7 @@ The main idea behind this was for me to be able to access my snippets on any dev
 </div>
 <hr class="hr_override">
 
-<div class="projects" id="layout_head_mini">
+<div class="body_content" id="layout_head_mini">
         
     
 <h4>Third project is just my mini TwitterShoutout </h4><br>
@@ -80,7 +70,7 @@ so I can inspect/save/reuse/modify them later and give shout outs at convenient 
 </div>
 <hr class="hr_override">
 
-<div class="projects" id="layout_head_mini">
+<div class="body_content" id="layout_head_mini">
         
     
 <h4>Next project is similar to one above, TwitterRandomizer </h4><br>
@@ -99,4 +89,5 @@ Then those unique randomised combinations of names are to be added to custom mes
 </div>
 <hr class="hr_override">
 @endsection
+
 

@@ -175,6 +175,15 @@
         letter-spacing: 0.03em;
         text-indent: 10px;
     }
+    .body_content{
+        margin-top: 100px;
+        display: block;
+    }
+    .img_project{
+        margin-top: 50px;
+        width: 800px;
+        height: 450px;
+    }
 
   </style>
     
