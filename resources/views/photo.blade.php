@@ -59,6 +59,8 @@
         
         /* CAROUSEL ---------------- */
         #myCarousel1{
+            background: rgb(208, 208, 208);
+        box-shadow: 4px 8px 5px rgba(144, 144, 144, 0.5);
             margin-top: 100px;
         }
 

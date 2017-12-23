@@ -176,6 +176,7 @@
         text-indent: 10px;
     }
     .body_content{
+        
         margin-top: 100px;
         display: block;
     }
@@ -184,7 +185,22 @@
         width: 800px;
         height: 450px;
     }
-
+       .img_about{
+           
+        margin-bottom: 50px;
+        width: 450px;
+        height:500px;
+        background: rgb(208, 208, 208);
+        box-shadow: 4px 8px 5px rgba(144, 144, 144, 0.5);
+    }
+      .img_barb{
+           
+        margin-bottom: 50px;
+        width: 700px;
+        height:500px;
+        background: rgb(208, 208, 208);
+        box-shadow: 4px 8px 5px rgba(144, 144, 144, 0.5);
+    }
   </style>
     
 </head>
