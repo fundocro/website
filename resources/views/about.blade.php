@@ -16,7 +16,7 @@
 
 <div class="body_content" id="layout_head_mini" >
     <img  class="img_about" src="/img/selfie.jpg"  alt="whops something went wrong lol!">    
-{{--    <h4>First of them is of course my website.</h4><br>--}}
+
     <p>
     If you are here then you already know my name,<br>
         for the simplicity you can just call me Gogi.<br> 

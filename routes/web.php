@@ -17,8 +17,8 @@ Route::get('/', function () {
 Route::get('/photography', function () {
     return view('photo');
 });
-Route::get('/resume', function () {
-    return view('rsmr');
+Route::get('/job_history', function () {
+    return view('jh');
 });
 
 Route::get('/projects', function () {

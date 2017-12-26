@@ -1,23 +1,63 @@
 
 
+
 @extends('layouts.master')
 
-@section('header_content')
+<style>
+    #footer{
+        display: none;
+    }
+</style>
 
-    <p>CONTACT PAGE</p>                
-    <p>
-      Hi, my name is written in big letters above lol. 
-    </p>
-    <p>{{@content}}</p>
+@section('header_content')
+   <div id="layout_head">
+        <p>
+        Contact 
+        </p>
+    </div>
+
  
 @endsection
 
 @section('body_content')
-    <p>
+<div class="body_content" id="layout_head_mini" >
+    <div class="col-lg-6  col-md-4 col-sm-6 col-xs-12 ">
+                        
+                       
+                        <div class="input-append newsletter-box text-left" id="contact_forms">
+                            {!!Form::open(['action'=>'Send_Mail@store'])!!}
 
-            Lorem ipsum...
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      itation ullamco laboris nisi ut aliquip ex ea commodo consequat.          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
-    </p>
+                              <div class="form-group">
+                                  
+                                  
+                                  <label>Your Name</label>
+                                  {!!Form::text('name','',['class'=>'form-control'])!!}
+                              </div>
+                            
+                              <div class="form-group">
+                                  <label>Your Email</label>
+                                  {!!Form::text('email','',['class'=>'form-control'])!!}
+                              </div>
+                            
+                               <div class="form-group" >
+                                    <label>Your Message</label>
+                                    {!!Form::textarea('body','',['class'=>'formcontrol','rows'=>6,'cols'=>40])!!}
+                               </div>
+                           
+                              <div class="form-group">
+                                  
+                                  {!!Form::submit('SEND',['class'=>'btn btn-info'])!!}
+                              </div>
+              
+
+                                        
+                              </div>   
+
+                            
+                            {!!Form::close()!!}
+
+                        </div>
+    </div>
+
 @endsection
 

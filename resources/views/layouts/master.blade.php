@@ -165,7 +165,7 @@
         letter-spacing: 0.06em;
         text-indent: 20px;
     }
-          #layout_head_mini p{
+          #layout_head_mini p , label{
         
         font-family:serif;
         font-style:oblique;
@@ -180,6 +180,19 @@
         margin-top: 100px;
         display: block;
     }
+       .body_job{
+        
+        padding-top: 100px;  
+        display:inline-block;
+        
+    }
+        #body_job_right{
+          
+          position: absolute;
+          width:550px;
+          text-align: left;
+      }
+   
     .img_project{
         margin-top: 50px;
         width: 800px;
@@ -201,8 +214,24 @@
         background: rgb(208, 208, 208);
         box-shadow: 4px 8px 5px rgba(144, 144, 144, 0.5);
     }
+        .img_job{
+           
+/*        margin-bottom: 50px;*/
+        width: 200px;
+        height:200px;
+/*
+        background: rgb(208, 208, 208);
+        box-shadow: 4px 8px 5px rgba(144, 144, 144, 0.5);
+            
+*/
+           
+    }
+       #contact_forms input{
+           
+        box-shadow: 4px 8px 5px rgba(144, 144, 144, 0.5);   
+            }
   </style>
-    
+  <script src='https://www.google.com/recaptcha/api.js'></script>  
 </head>
     
 <body>
@@ -227,7 +256,7 @@
             <li><a href="{{ url('/projects') }}">Projects</a></li>
             <li><a href="{{ url('/resources') }}">Resources</a></li>
             <li><a href="{{ url('/about') }}">About</a></li>
-            <li><a href="{{ url('/resume') }}">Resume Summary</a></li>
+            <li><a href="{{ url('/job_history') }}">Job History</a></li>
             <li><a href="{{ url('/contact') }}">Contact</a></li>   
           </ul >
         </div>
@@ -259,8 +288,7 @@
                 
                 @yield('body_content')
                 
-                
-                
+  
             </div> 
                       
           </div>{{--/ row content--}}
