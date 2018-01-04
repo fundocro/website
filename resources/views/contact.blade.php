@@ -31,7 +31,7 @@
                                   
                                   
                                   <label>Your Name</label>
-                                  {!!Form::text('name','',['class'=>'form-control'])!!}
+                                  {!!Form::text('namee','',['class'=>'form-control'])!!}
                               </div>
                             
                               <div class="form-group">
@@ -60,4 +60,6 @@
     </div>
 
 @endsection
+
+
 

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;//added
-
+use App\Http\Requests\ContactFormValidation;//added
 class Send_Mail extends Controller
 {
     /**
@@ -33,9 +33,9 @@ class Send_Mail extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ContactFormValidation $request)//original (Request $request )
     {
-        
+       //    
        if($request){
           Mail::send('mails.footer_message', array(
             'name' => $request->get('name'),

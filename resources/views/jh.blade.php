@@ -51,4 +51,36 @@
       
 </div>
 <hr class="hr_override">
+
+<div class="body_content" id="layout_head_mini" >
+   
+    <h3>Art of Metal Fencing</h3>
+    <div class="body_job">
+         
+        <img class="img_job"  src="img/metal1.png" alt="whops something went wrong :(">     
+    </div>
+
+    <div class="body_job">
+      
+        <p id="body_job_right">
+           Good old metal bashing, bending, welding going on here ;).<br>
+            This was my first official job, as many people here starting to work in at least one branch of metal industry as a young adult is quite normal.    
+        </p>
+    </div>
+
+    <div class="body_job">
+             <img class="img_job" class="body_job"  src="img/metal3.png" alt="whops something went wrong :(" style="float:right;">      
+         
+        <p>
+          Ornamental and wrought iron fences are a classic way to fence in property lines, driveways, decks, patios and swimming pools while maintaining an open view from the outside.   <br>
+         
+            Nobody really asks or cares how does the procedure of those beautiful ornamented pieces of fence come about, been there done that, and never going back.
+        </p>
+     
+       
+                <img class="img_job" class="body_job"  src="img/metal2.png" alt="whops something went wrong :(" style="float: right; margin-top: 50px; width: auto; ">
+    </div>
+      
+</div>
+<hr class="hr_override">
 @endsection

@@ -275,6 +275,7 @@
         <div class="container-fluid text-center">  
           <div class="row content">
             <p class="text-left" style="margin-top: 20px;color:#df6e6e;font-size:large;text-decoration: underline;">{{ Session::get('message') }}</p>
+            @include('includes.error')
             <div  class="text-left" class="col-sm-8 " class="panel panel-default" > 
               <img id="logo" src="img/logo.png" style="width:500px;margin-top:40px;">
                 
@@ -344,7 +345,7 @@
  
    
             
-            
+{{--            FOOTER CONTACT--}}
                     <div id="footer_style">
                     <div class="col-lg-1  col-md-4 col-sm-6 col-xs-12 ">
                         <h2> Contact ... </h2>
@@ -354,13 +355,13 @@
                             {!!Form::open(['action'=>'Send_Mail@store'])!!}
 
                               <div class="form-group">
-                                  
-                                  {!!Form::text('name','Name:',['class'=>'form-control'])!!}
+                                  {!!Form::label('namee','Name:')!!}
+                                  {!!Form::text('namee',null,['class'=>'form-control'])!!}
                               </div>
                             
                               <div class="form-group">
-                                  
-                                  {!!Form::text('email','Email:',['class'=>'form-control'])!!}
+                                  {!!Form::label('email','Email:')!!}
+                                  {!!Form::text('email',null,['class'=>'form-control'])!!}
                               </div>
                             
                                <div class="form-group" style="display: inline-block">
@@ -373,6 +374,7 @@
                               </div>
                                 
                             {!!Form::close()!!}
+                            
                             
 
                         </div>
@@ -398,7 +400,7 @@
         <!--/.footer-->
    
     </footer>
- 
+    
 </div>
 </body>
    
