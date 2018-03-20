@@ -6,6 +6,12 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
+  <!--footer styles-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--footer styles-->
+  
+  
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="jquery/jquery-3.2.1.slim.min.js"></script>  
     <script src="js/bootstrap.min.js"></script>
@@ -45,23 +51,11 @@
         margin-bottom:5%;
       }
   
-      #wip{
-          
-          margin-right: 30% ;
-      }
-      #wip a:hover{
-         color: black !important;  
-      }
-  
     /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
     .row.content {height: 800px}
     
     /* Set gray background color and 100% height */
-    .sidenav {
-      padding-top: 20px;
-      background-color: #f1f1f1;
-      height: 100%;
-    }
+
     
     /* Set black background color, white text and some padding */
 
@@ -73,24 +67,20 @@
       }
       .row.content {height:auto;} 
     }
-      
-
-      html #footer{
+        
+    
           
-
+        
+/*      
           
    top:expression((0-(footer.offsetHeight)+(document.documentElement.clientHeight ? document.documentElement.clientHeight : document.body.clientHeight)+(ignoreMe = document.documentElement.scrollTop ? document.documentElement.scrollTop : document.body.scrollTop))+'px');
+*/
 
        
        
-/*
-        bottom: 0;
-        left:0;
-        width: 100%;
-        position:fixed;
-        height:auto;
-*/
-       
+      
+
+
    
 /*
       background: url('img/denmark.png') no-repeat center center fixed; 
@@ -101,7 +91,8 @@
 */
   
           
-      }
+   
+/*
       
      @font-face {
         font-family: 'Unkempt-Bold.woff';
@@ -110,6 +101,7 @@
         font-style: normal;
 
       }
+*/
       
  
       
@@ -122,13 +114,18 @@
           color: #636570;
       }
       
-      #footer_style a {
+    .wheretn{
+    
+      margin-left: 20px;
+    
+    }
+      .sidebar a {
           color: #636570;
           font-family:fantasy;
           font-size: 18px;
           letter-spacing: 0.12em;
       }
-      #footer_style h3{
+      .sidebar h3{
           color: #636570;
           font-family:monospace;
           font-size: 30px;
@@ -141,15 +138,22 @@
           background-color: #636570;
           border-style: none;
       }
+    
+    .contact{
+      margin-right: 20px;
+      margin-left: 20px;
+      margin-bottom: 150px;
+      
+    }
       #social i{
           margin-top: 20px;
-          margin-left:20px;
+          margin-left:50px;
       }
       .twitter{
-          position: relative;
-          float: right;
-          width:350px;
-          margin-right: 50px;
+          
+          margin: auto;
+          width:300px;
+         
           margin-top: 30px;
       }
       #logo{
@@ -187,7 +191,7 @@
         
     }
         #body_job_right{
-          
+          margin-left: 20px;
           position: absolute;
           width:550px;
           text-align: left;
@@ -217,8 +221,11 @@
         .img_job{
            
 /*        margin-bottom: 50px;*/
+        margin: 20px;
         width: 200px;
         height:200px;
+            background: rgb(208, 208, 208);
+        box-shadow: 4px 8px 5px rgba(144, 144, 144, 0.5);
 /*
         background: rgb(208, 208, 208);
         box-shadow: 4px 8px 5px rgba(144, 144, 144, 0.5);
@@ -239,16 +246,6 @@
     <div class="wrapper">
     <nav class="navbar navbar-inverse">
       <div class="container-fluid">
-        <div class="navbar-header">
-            
-{{--          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">--}}
-            
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>                        
-          </button>
-
-        </div>
         <div class="main_body" class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li><a href="{{ url('/') }}">Home</a></li>
@@ -260,15 +257,132 @@
             <li><a href="{{ url('/contact') }}">Contact</a></li>   
           </ul >
         </div>
-{{--
-        <div id="wip">
-          <ul class="nav navbar-nav navbar-right" >
-            <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> WIP</a></li>
-          </ul>
-        </div>      
---}}
       </div>
     </nav>
+
+      
+
+  <div class="sidebar">
+
+  <div class="w3-sidebar" 
+       style="width:25%;display:none;right:0;" id="rightMenu">
+    
+    <button 
+            onclick="closeRightMenu()" 
+            class="w3-bar-item w3-button w3-large"
+    >
+            Close &times;
+    
+    </button>
+    
+    <a href="#" class="w3-bar-item w3-button"></a>
+
+  <!--WHERE TO NEXT-------------------> 
+                  <div class="wheretn">
+                    <h3> Where To Next </h3>
+                    <ul>
+                        <li> <a href="{{url('/photography')}}"> Wiew My Photography </a> </li>
+                        <li> <a href="{{url('/projects')}}"> Projects </a> </li>
+                        <li> <a href="{{url('/resources')}}"> Resources </a> </li>
+                        <li> <a href="{{url('/about')}}"> About </a> </li>
+                        <li> <a href="{{url('/job_history')}}"> Job History </a> </li>
+                        <li> <a href="https://laravel.com/"> Laravel </a> </li>
+                        <li> <a href="https://www.hosting24.com/"> Hosting24 </a> </li>
+                        <li> <a href="https://twitter.com/Yugostorm"> Twitter </a> </li>
+                        <li> <a href="https://github.com/fundocro"> Github </a> </li>
+                        <li> <a href=" https://www.youtube.com/channel/UC7rCwik9X_4EcPtcoM6LyzA/featured"> Youtube </a> </li>
+
+                        <li>
+                            <p> 
+                                <span style="">2017 
+                                    <a href="{{url('/contact')}}"><i class="fa fa-link"> G.F </i></a> 
+                                </span> 
+                            </p>
+
+                        </li>
+                    </ul>
+                  </div>
+    <hr>
+      <!--TWITTER-------------------> 
+                             <div  class="twitter">
+
+                           <a class="twitter-timeline"  href="https://twitter.com/hashtag/laravel" data-widget-id="939926524760920064">#laravel Tweets</a>
+                              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+                             </div> 
+
+  
+      <!--SOCIAL------------------->
+    
+                            <h3> Contact ... </h3>
+                            <div id="social">
+
+
+                              <a href="https://twitter.com/Yugostorm"> <i class="fa fa-twitter fa-3x" style="color:#4a4c4e;"> </i> </a> 
+                              <a href="https://github.com/fundocro"> <i class="fa fa-github fa-3x" style="color:#4a4c4e;" > </i> </a> 
+                               <a href="https://www.youtube.com/channel/UC7rCwik9X_4EcPtcoM6LyzA"> <i class="fa fa-youtube fa-3x" style="color:#4a4c4e;"> </i> </a> 
+
+                            </div>
+
+    <hr>
+    
+    <!--CONTACT------------------->
+                          <div class="contact">
+                            <div class="input-append newsletter-box text-center">
+                                {!!Form::open(['action'=>'Send_Mail@store'])!!}
+
+                                  <div class="form-group">
+                                      {!!Form::label('namee','Name:')!!}
+                                      {!!Form::text('namee',null,['class'=>'form-control'])!!}
+                                  </div>
+
+                                  <div class="form-group">
+                                      {!!Form::label('email','Email:')!!}
+                                      {!!Form::text('email',null,['class'=>'form-control'])!!}
+                                  </div>
+
+                                   <div class="form-group" style="display: inline-block">
+
+                                       {!!Form::textarea('body','',['class'=>'formcontrol','rows'=>6,'cols'=>40])!!}
+                                   </div>
+
+                                  <div class="form-group" style="display: inline-block">
+                                      {!!Form::submit('SEND',['class'=>'btn btn-info'])!!}
+                                  </div>
+
+                                {!!Form::close()!!}
+                            </div>
+                          </div>
+
+
+  </div>
+
+  <div class="w3-teal">
+
+    <button class=" w3-xlarge w3-right" style="margin-right: 20%;"
+            onclick="openRightMenu()">&#9776; 
+    </button>
+
+  </div>
+
+
+  <script>
+
+
+  function openRightMenu() {
+      document.getElementById("rightMenu").style.display = "block";
+  }
+  function closeRightMenu() {
+      document.getElementById("rightMenu").style.display = "none";
+  }
+  </script>     
+    
+</div>
+<!--END SIDEBAR-->
+      
+      
+      
+      
     
     {{--main_body--}}
     <div class="main_body" class="container" >
@@ -285,123 +399,23 @@
          
               
             <div  class="text-left" class="col-sm-8 " class="main_body"> 
-                
-                
+                  
                 @yield('body_content')
                 
-  
             </div> 
+            
+            
                       
           </div>{{--/ row content--}}
         </div>
            
 
     </div>{{--/ main_body--}}
-        
-{{--footer--}}
-
   
-
-                
-    <footer>
-        <div  id="footer">
-          
-                             
-                 
-                         <div  class="twitter">
-                         
-                                 <a class="twitter-timeline"  href="https://twitter.com/hashtag/laravel" data-widget-id="939926524760920064">#laravel Tweets</a>
-                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-                            </div>    
-            
-            
-                    <div id="footer_style">
-                        <div class="col-lg-9  col-md-4 col-sm-6 col-xs-12">
-                            <h3> Where To Next </h3>
-                            <ul>
-                                <li> <a href="{{url('/photography')}}"> Wiew My Photography </a> </li>
-                                <li> <a href="{{url('/projects')}}"> Projects </a> </li>
-                                <li> <a href="{{url('/resources')}}"> Resources </a> </li>
-                                <li> <a href="{{url('/about')}}"> About </a> </li>
-                                <li> <a href="{{url('/resume')}}"> Resume Summary </a> </li>
-                                <li> <a href="https://laravel.com/"> Laravel </a> </li>
-                                <li> <a href="https://www.hosting24.com/"> Hosting24 </a> </li>
-                                <li> <a href="https://twitter.com/Yugostorm"> Twitter </a> </li>
-                                <li> <a href="https://github.com/fundocro"> Github </a> </li>
-                                <li> <a href=" https://www.youtube.com/channel/UC7rCwik9X_4EcPtcoM6LyzA/featured"> Youtube </a> </li>
-      
-                                <li>
-                                    <p> 
-                                        <span style="">2017 
-                                            <a href="{{url('/contact')}}"><i class="fa fa-link"> G.F </i></a> 
-                                        </span> 
-                                    </p>
-
-                                </li>
-                            </ul>
-                        </div>
-                    </div>  
+        
+</div>{{--/ wrapper--}}
  
-   
-            
-{{--            FOOTER CONTACT--}}
-                    <div id="footer_style">
-                    <div class="col-lg-1  col-md-4 col-sm-6 col-xs-12 ">
-                        <h2> Contact ... </h2>
-                        
-                       
-                        <div class="input-append newsletter-box text-center">
-                            {!!Form::open(['action'=>'Send_Mail@store'])!!}
-
-                              <div class="form-group">
-                                  {!!Form::label('namee','Name:')!!}
-                                  {!!Form::text('namee',null,['class'=>'form-control'])!!}
-                              </div>
-                            
-                              <div class="form-group">
-                                  {!!Form::label('email','Email:')!!}
-                                  {!!Form::text('email',null,['class'=>'form-control'])!!}
-                              </div>
-                            
-                               <div class="form-group" style="display: inline-block">
-                                  
-                                   {!!Form::textarea('body','',['class'=>'formcontrol','rows'=>6,'cols'=>40])!!}
-                               </div>
-                           
-                              <div class="form-group" style="display: inline-block">
-                                  {!!Form::submit('SEND',['class'=>'btn btn-info'])!!}
-                              </div>
-                                
-                            {!!Form::close()!!}
-                            
-                            
-
-                        </div>
-                      </div>
-                        
-                    </div>
-            
-                    <div id="social" class="col-lg-2  col-md-4 col-sm-6 col-xs-12 ">
-                         
-              
-                        <a href="https://twitter.com/Yugostorm"> <i class="fa fa-twitter fa-3x" style="color:#4a4c4e;"> </i> </a> 
-                        <a href="https://github.com/fundocro"> <i class="fa fa-github fa-3x" style="color:#4a4c4e;" > </i> </a> 
-                         <a href="https://www.youtube.com/channel/UC7rCwik9X_4EcPtcoM6LyzA"> <i class="fa fa-youtube fa-3x" style="color:#4a4c4e;"> </i> </a> 
-             
-                    </div>
-
-               
-                         
-            
-       
-     
-        </div>
-        <!--/.footer-->
-   
-    </footer>
     
-</div>
 </body>
    
 </html>

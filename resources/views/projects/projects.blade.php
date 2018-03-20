@@ -19,7 +19,7 @@
         
     <h4>First of them is of course my website.</h4><br>
     <p>
-    I can list it as my latest and biggest project.<br>
+    I can say it is my first website crated from scratch.<br>
     As you can see I try to make it simple and readable, constantly implementing newly learned skills.<br>
     So I could say that my site is a direct representation of my skills as a beginner web developer...<br>
     To describe my site in a few words, and not trying to be smart about it, I could say:<br>
@@ -32,10 +32,36 @@
 </div>
 <hr class="hr_override">
 
+{{--//foto--}}
+
+<div class="body_content" id="layout_head_mini" >
+        
+    <h4>Fotocubicle is my biggest occupation and challenge</h4><br>
+    <p>
+        <a href="https://fotocubicle.com/"><span style="text-decoration: underline">Fotocubicle</span></a>
+         is a photo-stock like website that allow's you to upload and store your photography with possibillity to sell or buy new photos.<br>
+        Website offers more that that, it can be set-up to sell prints, phone cases, bags, T-shirts. 
+
+    </p>
+    <img  class="img_project" src="/img/fotocubi.png"  alt="whops something went wrong lol!">
+    
+</div>
+<hr class="hr_override">
+
+
+
+
+{{--/foto--}}
+
+
+
+
+
+
 <div class="body_content" id="layout_head_mini">
         
     
-<h4>Second project that I would like to present here</h4><br>
+<h4>Third project that I would like to present here</h4><br>
     <p>
 Is my little <a href="#"><span style="text-decoration: underline">Snippets app</span></a>  that I made to store my snippets dooh :)<br>
 It is powered by Laravel of course, with possibility to login/register <br>
@@ -55,7 +81,7 @@ The main idea behind this was for me to be able to access my snippets on any dev
 <div class="body_content" id="layout_head_mini">
         
     
-<h4>Third project is just my mini TwitterShoutout </h4><br>
+<h4>Now we come to my mini newb TwitterShoutout </h4><br>
     <p>
 <a href="#"><span style="text-decoration: underline">TwitterShoutout's</span></a>
 Intention was to store custom shout out messages from my followers and keep them in order,

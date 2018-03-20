@@ -1,4 +1,5 @@
 @extends('layouts.master')
+
 @section('header_content')
  
 <div id="layout_head"> 
