@@ -142,7 +142,7 @@
     .contact{
       margin-right: 20px;
       margin-left: 20px;
-      margin-bottom: 150px;
+      margin-bottom: 550px;
       
     }
       #social i{
